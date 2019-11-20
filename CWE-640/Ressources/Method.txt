@@ -1,0 +1,3 @@
+Page : http://localhost:8080/index.php?page=recover
+
+Inspect the page, and notice that the email address in the recover password form is hardcoded. Modify it, submit, and get the flag.

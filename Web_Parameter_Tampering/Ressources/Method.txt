@@ -1,0 +1,7 @@
+Page : http://localhost:8080/index.php?page=survey
+
+When you grade a subject, the number of vote changes.
+
+Inspect the page and notice that the value added to make an average is editable.
+
+Change it and grade the choosen one with the value you modified. Get the flag.

