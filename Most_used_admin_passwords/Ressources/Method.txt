@@ -1,0 +1,3 @@
+Just tried all the passwords in this page : https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
+
+admin:shadow
