@@ -1,0 +1,5 @@
+Just navigate into the file arborescence : ../../../../../../../ Until it tells you that you arrived
+
+Then /etc/passwd
+
+And get the flag
