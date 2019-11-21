@@ -1,0 +1,13 @@
+Access to Robots file:
+
+/robots.txt
+
+You see the folder /whatever is protected
+
+navigate to /whatever and download the file htpasswd
+
+inside the file you have "root:8621ffdbc5698829397d97767ac13db3"
+
+Decoding the hash gets you the password: dragon
+
+Use username: root and password: dragon in /admin to get the flag
