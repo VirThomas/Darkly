@@ -1,0 +1,3 @@
+Navigate to /index.php?page=feedback
+
+Try to inject a <script> tag in the 'comment' field and submit to try to introduce a javascript code in the website. This will give you the flag
