@@ -1,0 +1,15 @@
+It is important to know that configuration files can grant an attacker some
+information about security and filesystem. In this case, robots.txt is a file
+that tells search engines which directories not to look at, which can also give
+some information about what the developer don't want to be public.
+
+
+1. Access to Robots file: /robots.txt
+2. There is a folder listed, called /.hidden which is protected
+3. Navigate to /.hidden there are multiple folders and sub-folders with
+   more than 18.200 README files
+4. Create a script to scrap every page recursively, to gather all the README files
+   - python3 scrapper.py > output.scrapping
+5. Use grep to remove useless lines in the output file to get the flag:
+   - cat output.scrapping | grep -v Non | grep -v Demande | grep -v Tu | grep -v Toujours
+6. Flag is in the line 15964
