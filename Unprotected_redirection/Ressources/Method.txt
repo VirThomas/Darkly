@@ -1,3 +1,8 @@
-Any pages
+Web redirections to different URLs must be protected in order to avoid information
+going somewhere it is not intended to. When redirections are defined without
+validation, like getting the url form a GET parameter in url, the user can modify
+it at any time.
 
-Copy link of Facebook instagram or twitter and change the page redirection by anything. Get the flag
+1. At any page, copy the footer link of Facebook/instagram/twitter
+2. Change the page redirection url by anything you want.
+3. Navigate to the new URL. Get the flag

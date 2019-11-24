@@ -1,7 +1,9 @@
-Page : http://localhost:8080/index.php?page=survey
+Forms and parameters passed to server need back-end validation. Otherwise, they
+can be arbitrarily modified by users. In this example, we have a voting form
+which value can be easily modified manually.
 
-When you grade a subject, the number of vote changes.
-
-Inspect the page and notice that the value added to make an average is editable.
-
-Change it and grade the choosen one with the value you modified. Get the flag.
+1. Navigate to /index.php?page=survey
+2. Inspect elements: they form stores the value of your vote
+   inside an HTML tag parameter in the front side.
+3. Modify the value of one of the select options for a big number of your choice
+4. Select that option to vote. Get the flag.

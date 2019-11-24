@@ -1,5 +1,12 @@
-There is a cookie called I_am_admin
+The website uses cookies in order to save security information.
+The exploit consist in finding out how the website uses those cookies,
+and modifying its value in the browser in order to force a different behaviour,
+and maybe get privileged access.
 
-Inspect elements, go to Application -> Storage -> Cookies (chrome) or Storage -> Cookies (Firefox)
-Get cookie value and decode it in md5. It is just a 'false' value. We encode 'true' to md5 and get 'b326b5062b2f0e69046810717534cb09'. We replace the cookie value on the browser and get an alert with the flag
+There is a cookie called 'I_am_admin'
 
+1. Inspect elements.
+2. Go to Application -> Storage -> Cookies (chrome) or Storage -> Cookies (Firefox).
+3. Get cookie value and decode it (it is encoded in md5). It is just a 'false' value.
+4. Encode 'true' to md5 and get 'b326b5062b2f0e69046810717534cb09'.
+5. Replace the cookie value on the browser and get an alert with the flag

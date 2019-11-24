@@ -1,3 +1,8 @@
-Page : http://localhost:8080/index.php?page=recover
+A password recovery mechanism should be protected.
+The exploit consists on using a weak password recovery system
+to get unathorized access to someone's account.
 
-Inspect the page, and notice that the email address in the recover password form is hardcoded. Modify it, submit, and get the flag.
+1. Navigate to /index.php?page=recover
+2. Inspect the page, and notice that the email address in the recover password form
+   is hardcoded.
+3. Modify it manually, and submit the form to get the flag.

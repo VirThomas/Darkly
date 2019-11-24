@@ -1,3 +1,7 @@
-?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgndG90bycpPC9zY3JpcHQ+
+HTML Objects can insert raw data inside a website. In this case, that information
+is being read from a GET parameter in the URL. This can be modified by an arbitrary
+code in Javascript (converted in base64) which will be executed by the website.
 
-Inject JavaScript where it is interpreted. Then convert a script into Base64 to make it executable, like an alert and run
+1. Navigate to ?page=media&src=nsa
+2. Change the url to: ?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgndG90bycpPC9zY3JpcHQ+
+3. Code introduces a javascript alert code, which will be executed and give you the flag

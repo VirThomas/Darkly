@@ -1,3 +1,7 @@
-Just tried all the passwords in this page : https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
+One of the simplest security breaches is password brute-force. Using dictionaries
+with the most common passwords, words and terms, it is possible to have access to
+some accounts and services.
 
-admin:shadow
+1. Use a script or manually try the most common used passwords:
+   - I.e. the passwords in this page : https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
+2. Get admin access by using admin:shadow as login/password

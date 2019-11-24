@@ -1,8 +1,13 @@
-Page : http://localhost:8080/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
+Servers respond differently by analyzing information they recieve in a request header.
+The vulnerability consist in understanding how the server responds to some of thos parameters
+and modifying them manually to force a different behaviour.
 
-Inspect the page and notice a huge comment on it. You can pick important informations like :
-You must cumming from : "https://www.nsa.gov/" to go to the next step
-
-Let's use this browser : "ft_bornToSec". It will help you a lot.
-
-Done with ModHeader extension Chrome : User-Agent ft_bornToSec & Referer https://www.nsa.gov/
+1. Navigate to /index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
+2. Inspect the page and notice a huge comment on it.
+   You can find important information like:
+      - You must be coming from : "https://www.nsa.gov/" to go to the next step
+      - Let's use this browser : "ft_bornToSec". It will help you a lot.
+3. Modify the request manually, or install a plug-in or extension (i.e. ModHeader extension for Chrome)
+   - Set User-Agent to ft_bornToSec
+   - Set Referer to https://www.nsa.gov/
+4. Get the flag and enjoy

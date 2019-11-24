@@ -1,5 +1,12 @@
-Just navigate into the file arborescence : ../../../../../../../ Until it tells you that you arrived
+Application or server running can have privileged access to the file-system.
+The exploit consists in using those privileges to access system files
+that you couldn't normally access to.
 
-Then /etc/passwd
-
-And get the flag
+1. Navigate into the file tree by steps:
+   - /../
+   - /../../
+   - /../../../
+   - /../../../../
+   - /../../../../../
+2. Look for important files like /etc/passwd (And get the flag)
+   Access to system files can lead to new exploits on the system

